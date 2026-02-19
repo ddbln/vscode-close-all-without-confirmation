@@ -2,7 +2,7 @@
 
 Effortlessly close all editors (unsaved and saved) in VS Code without being repeatedly interrupted by confirmation dialogs! Perfect for those who want to swiftly close multiple unsaved files without clicking "Don't Save" over and over again.
 
-> Ported from the popular [Sublime Text plugin](https://packagecontrol.io/packages/Close%20All%20without%20Confirmation) with 3K+ installs.
+> Finally! The popular [Sublime Text plugin](https://packagecontrol.io/packages/Close%20All%20without%20Confirmation) (3K+ installs) is now available as a VS Code extension.
 
 ## The Problem
 
@@ -10,12 +10,11 @@ You've searched and replaced across dozens of files — or opened a huge project
 
 ## Features
 
-- **Close all editors** (saved and unsaved) without any confirmation dialogs
-- **Choose scope**: close all editors across all groups, or only in the active editor group
-- **Quick Pick menu**: by default, a single prompt lets you choose the scope before closing
-- **Fully configurable**: disable the prompt entirely for maximum speed
-- **Two commands** for flexible keybinding setups
-- **Works in Cursor** and other VS Code forks
+- **Zero config** — install, run, done
+- **The nuclear option** — close all editors at once, saved and unsaved. One prompt to confirm, or none at all
+- **Choose your scope** — all editor groups or just the active one
+- **Fine-tunable** — by default, a single prompt lets you choose the scope. Disable it for instant, zero-click execution
+- **Keybinding-ready** — two commands, bind them however you like
 
 ## Installation
 
@@ -52,7 +51,7 @@ All unsaved changes are discarded. No per-file confirmation dialogs.
 
 ### Keybindings
 
-This extension does not add keybindings by default. To set your own, open your keybindings JSON (`Ctrl+K Ctrl+S` > Open Keyboard Shortcuts JSON) and add:
+This extension does not add keybindings by default. To set your own, open your keybindings JSON (`Ctrl+K Ctrl+S` > Open Keyboard Shortcuts JSON) and add e.g.:
 
 **macOS:**
 ```json

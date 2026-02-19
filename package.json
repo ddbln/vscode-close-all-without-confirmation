@@ -18,13 +18,45 @@
     "discard",
     "revert",
     "tabs",
-    "unsaved"
+    "unsaved",
+    "editor",
+    "productivity",
+    "workflow",
+    "force close",
+    "dirty files"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ddbln/vscode-close-all-without-confirmation"
   },
+  "homepage": "https://github.com/ddbln/vscode-close-all-without-confirmation#readme",
+  "bugs": {
+    "url": "https://github.com/ddbln/vscode-close-all-without-confirmation/issues"
+  },
   "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "badges": [
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/i/ddbln.close-all-without-confirmation",
+      "href": "https://marketplace.visualstudio.com/items?itemName=ddbln.close-all-without-confirmation",
+      "description": "Install count"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/r/ddbln.close-all-without-confirmation",
+      "href": "https://marketplace.visualstudio.com/items?itemName=ddbln.close-all-without-confirmation",
+      "description": "Rating"
+    },
+    {
+      "url": "https://img.shields.io/github/license/ddbln/vscode-close-all-without-confirmation",
+      "href": "https://github.com/ddbln/vscode-close-all-without-confirmation/blob/main/LICENSE",
+      "description": "License"
+    }
+  ],
+  "markdown": "github",
+  "qna": false,
   "main": "./out/extension.js",
   "activationEvents": [],
   "contributes": {
@@ -44,11 +76,13 @@
         "closeAllNoConfirm.askBeforeClosing": {
           "type": "boolean",
           "default": true,
-          "description": "Show a quick pick menu before closing. When disabled, files are closed immediately."
+          "order": 1,
+          "description": "Show a quick pick menu before closing (if disabled, all editors close immediately without any prompt)."
         },
         "closeAllNoConfirm.activeGroupOnly": {
           "type": "boolean",
           "default": false,
+          "order": 2,
           "description": "When 'Ask Before Closing' is disabled: only close editors in the active group instead of all groups."
         }
       }
