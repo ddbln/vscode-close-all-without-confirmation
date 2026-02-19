@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1] - 2026-02-19
+
+### Changed
+- Use "tabs" instead of "editors" in all user-facing text for better discoverability
+- Updated description, README, settings, and quick pick labels
+
 ## [1.0.0] - 2026-02-19
 
 ### Added

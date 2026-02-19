@@ -29,11 +29,11 @@ async function handleCloseAll(): Promise<void> {
         // Show quick pick menu — mirrors the Sublime Text version's behavior
         const options: vscode.QuickPickItem[] = [
             {
-                label: '$(close-all) Close all editors',
+                label: '$(close-all) Close all tabs',
                 description: 'All editor groups'
             },
             {
-                label: '$(close) Close editors in active group',
+                label: '$(close) Close tabs in active group',
                 description: 'Active group only'
             }
         ];

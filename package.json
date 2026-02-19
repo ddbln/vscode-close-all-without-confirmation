@@ -1,8 +1,8 @@
 {
   "name": "close-all-without-confirmation",
   "displayName": "Close All without Confirmation",
-  "description": "Instantly close all editors (unsaved and saved) without repetitive confirmation dialogs!",
-  "version": "1.0.0",
+  "description": "Instantly close all tabs (including unsaved) without repetitive confirmation dialogs! ⚡️",
+  "version": "1.0.1",
   "author": {
     "name": "Dirk Dassow"
   },
@@ -86,13 +86,13 @@
           "type": "boolean",
           "default": true,
           "order": 1,
-          "description": "Show a quick pick menu before closing (if disabled, all editors close immediately without any prompt)."
+          "description": "Show a quick pick menu before closing (if disabled, all tabs close immediately without any prompt)."
         },
         "closeAllNoConfirm.activeGroupOnly": {
           "type": "boolean",
           "default": false,
           "order": 2,
-          "description": "When 'Ask Before Closing' is disabled: only close editors in the active group instead of all groups."
+          "description": "When 'Ask Before Closing' is disabled: only close tabs in the active group instead of all groups."
         }
       }
     }
