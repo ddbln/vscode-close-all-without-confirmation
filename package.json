@@ -1,0 +1,68 @@
+{
+  "name": "close-all-without-confirmation",
+  "displayName": "Close All without Confirmation",
+  "description": "Instantly close all editors (unsaved and saved) without repetitive confirmation dialogs!",
+  "version": "1.0.0",
+  "publisher": "ddbln",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "close",
+    "close all",
+    "no confirmation",
+    "discard",
+    "revert",
+    "tabs",
+    "unsaved"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddbln/vscode-close-all-without-confirmation"
+  },
+  "icon": "images/icon.png",
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "closeAllNoConfirm.closeAll",
+        "title": "Close All without Confirmation"
+      },
+      {
+        "command": "closeAllNoConfirm.closeAllInGroup",
+        "title": "Close All in Group without Confirmation"
+      }
+    ],
+    "configuration": {
+      "title": "Close All without Confirmation",
+      "properties": {
+        "closeAllNoConfirm.askBeforeClosing": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show a quick pick menu before closing. When disabled, files are closed immediately."
+        },
+        "closeAllNoConfirm.activeGroupOnly": {
+          "type": "boolean",
+          "default": false,
+          "description": "When 'Ask Before Closing' is disabled: only close editors in the active group instead of all groups."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
