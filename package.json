@@ -3,6 +3,9 @@
   "displayName": "Close All without Confirmation",
   "description": "Instantly close all editors (unsaved and saved) without repetitive confirmation dialogs!",
   "version": "1.0.0",
+  "author": {
+    "name": "Dirk Dassow"
+  },
   "publisher": "ddbln",
   "license": "MIT",
   "engines": {
@@ -14,16 +17,22 @@
   "keywords": [
     "close",
     "close all",
+    "close editors",
     "no confirmation",
+    "no save dialog",
     "discard",
     "revert",
     "tabs",
     "unsaved",
+    "unsaved files",
     "editor",
     "productivity",
     "workflow",
+    "utility",
     "force close",
-    "dirty files"
+    "dirty files",
+    "file management",
+    "keyboard shortcut"
   ],
   "repository": {
     "type": "git",
