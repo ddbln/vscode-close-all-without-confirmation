@@ -1,8 +1,8 @@
 {
   "name": "close-all-without-confirmation",
   "displayName": "Force Close All File Tabs",
-  "description": "Force close all file tabs without saving — instantly discard unsaved changes, no confirmation dialogs! ⚡️",
-  "version": "1.1.0",
+  "description": "No more \"Do you want to save?\" ⚡️",
+  "version": "1.1.1",
   "author": {
     "name": "Dirk Dassow"
   },

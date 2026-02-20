@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.1.1] - 2026-02-20
+
+### Changed
+- Improved description
+
 ## [1.1.0] - 2026-02-20
 
 ### Changed
