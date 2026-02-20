@@ -1,8 +1,8 @@
 {
   "name": "close-all-without-confirmation",
-  "displayName": "Close All without Confirmation",
-  "description": "Instantly close all tabs (including unsaved) without repetitive confirmation dialogs! ⚡️",
-  "version": "1.0.1",
+  "displayName": "Force Close All File Tabs",
+  "description": "Force close all file tabs without saving — instantly discard unsaved changes, no confirmation dialogs! ⚡️",
+  "version": "1.1.0",
   "author": {
     "name": "Dirk Dassow"
   },
@@ -15,24 +15,23 @@
     "Other"
   ],
   "keywords": [
-    "close",
+    "force close",
     "close all",
+    "close tabs",
+    "close all tabs",
+    "close files",
+    "close all files",
     "close editors",
+    "close without saving",
+    "close without confirmation",
     "no confirmation",
     "no save dialog",
     "discard",
     "revert",
-    "tabs",
     "unsaved",
     "unsaved files",
-    "editor",
-    "productivity",
-    "workflow",
-    "utility",
-    "force close",
     "dirty files",
-    "file management",
-    "keyboard shortcut"
+    "tabs"
   ],
   "repository": {
     "type": "git",
@@ -72,15 +71,15 @@
     "commands": [
       {
         "command": "closeAllNoConfirm.closeAll",
-        "title": "Close All without Confirmation"
+        "title": "Force Close All File Tabs"
       },
       {
         "command": "closeAllNoConfirm.closeAllInGroup",
-        "title": "Close All in Group without Confirmation"
+        "title": "Force Close File Tabs in Active Group"
       }
     ],
     "configuration": {
-      "title": "Close All without Confirmation",
+      "title": "Force Close All File Tabs",
       "properties": {
         "closeAllNoConfirm.askBeforeClosing": {
           "type": "boolean",

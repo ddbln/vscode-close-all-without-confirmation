@@ -1,17 +1,17 @@
-// Close All without Confirmation - VS Code Extension
+// Force Close All File Tabs - VS Code Extension
 // Ported from the Sublime Text plugin by Dirk Dassow
 // Copyright (c) 2023-2026 Dirk Dassow
 
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    // Main command: Close All without Confirmation
+    // Main command: Force Close All File Tabs
     const closeAll = vscode.commands.registerCommand(
         'closeAllNoConfirm.closeAll',
         () => handleCloseAll()
     );
 
-    // Shortcut command: Close All in active group only
+    // Shortcut command: Force Close File Tabs in Active Group
     const closeAllInGroup = vscode.commands.registerCommand(
         'closeAllNoConfirm.closeAllInGroup',
         () => closeAllEditors(true)
@@ -29,17 +29,17 @@ async function handleCloseAll(): Promise<void> {
         // Show quick pick menu — mirrors the Sublime Text version's behavior
         const options: vscode.QuickPickItem[] = [
             {
-                label: '$(close-all) Close all tabs',
+                label: '$(close-all) Force close all file tabs',
                 description: 'All editor groups'
             },
             {
-                label: '$(close) Close tabs in active group',
+                label: '$(close) Force close file tabs in active group',
                 description: 'Active group only'
             }
         ];
 
         const selected = await vscode.window.showQuickPick(options, {
-            placeHolder: 'Warning: All unsaved changes will be lost!'
+            placeHolder: 'Warning: All unsaved changes will be discarded!'
         });
 
         if (!selected) {

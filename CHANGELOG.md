@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.0] - 2026-02-20
+
+### Changed
+- Renamed to "Force Close All File Tabs" for better clarity
+- Updated command titles and description
+
 ## [1.0.1] - 2026-02-19
 
 ### Changed
